@@ -1,0 +1,17 @@
+#pagination{
+  width: 100%
+  text-align: center;
+}
+#pagination li{
+  float: left;
+  
+  list-style-type: none;
+}
+#pagination li a{
+text-decoration: none;
+  background-color: black;
+  border-radius: 30px;
+  padding: 10px;
+  color: white;
+  
+}

@@ -1,0 +1,53 @@
+#content {
+  margin-top: 30px;
+  
+  
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+#split_content{
+  display: flex;
+  width: 100%
+}
+#left_content {
+  width: 100%;
+
+}
+#left_content img{
+  width: 100%;
+}
+#right_content {
+  float: right;
+  width: 100%;
+  text-align: center;
+}
+#right_content p {
+  
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+#content h2 {
+  text-align: center;
+}
+#social {
+  text-align: center;
+}
+#social img{
+  margin-top: 50px;
+  width: 50px;
+  height: auto;
+}
+#content iframe {
+  display:block;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: 1100px) {
+#content {
+  display: block;
+}
+}
