@@ -13,8 +13,8 @@ setlocale(LC_ALL, 'nl_NL');
 if (PROJECT_STATUS != "local_development"){
 define('DB_HOST','localhost');
 define('DB_NAME','my_band');
-define('DB_USERNAME','18701');
-define('DB_PASSWORD','yimzrvgx');
+define('DB_USERNAME','');
+define('DB_PASSWORD','');
 } else {
   define('DB_HOST','localhost');
   define('DB_NAME','my_band');
