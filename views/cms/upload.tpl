@@ -4,7 +4,7 @@
    <option value="select">Select</option>
    <option value="newsarticle">newsarticle</option>
    <option value="scheme">scheme</option>
-   <option value="about">about</option>
+   <!-- <option value="about">about</option> -->
 </select><br>
 <script type="text/javascript">
   function change_form(){
@@ -17,9 +17,9 @@
     if (str == "scheme"){
       $("#inputfields").load("views/cms/scheme.tpl");
     };
-    if (str == "about"){
-      $("#inputfields").load("views/cms/about.tpl");
-    };
+    // if (str == "about"){
+    //   $("#inputfields").load("views/cms/about.tpl");
+    // };
   };
 </script>
 

@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2016-11-03 15:45:44
+<?php /* Smarty version Smarty-3.1.18, created on 2016-12-02 12:15:41
          compiled from "views\newsarticles.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:545057f755eb8cef80-70065111%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'd2104d91d134b1ddf013f0f614b9454791a8acef' => 
     array (
       0 => 'views\\newsarticles.tpl',
-      1 => 1478184343,
+      1 => 1480677025,
       2 => 'file',
     ),
   ),
@@ -27,7 +27,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_57f755eb9737e6_42330180')) {function content_57f755eb9737e6_42330180($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_date_format')) include 'C:\\wamp\\www\\school\\jaar2\\Projects\\My_band2\\libs\\plugins\\modifier.date_format.php';
+<?php if ($_valid && !is_callable('content_57f755eb9737e6_42330180')) {function content_57f755eb9737e6_42330180($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_date_format')) include 'C:\\wamp64\\www\\school\\My_Band\\libs\\plugins\\modifier.date_format.php';
 ?>
 <div id="content">
 <div id="split_content">

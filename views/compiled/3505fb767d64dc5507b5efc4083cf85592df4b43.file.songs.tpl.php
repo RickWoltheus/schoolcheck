@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2016-11-03 16:27:57
+<?php /* Smarty version Smarty-3.1.18, created on 2016-11-03 17:31:52
          compiled from "views\songs.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:19535581b4ea79f7af1-78822869%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '3505fb767d64dc5507b5efc4083cf85592df4b43' => 
     array (
       0 => 'views\\songs.tpl',
-      1 => 1478186875,
+      1 => 1478190710,
       2 => 'file',
     ),
   ),
@@ -35,6 +35,10 @@ $_smarty_tpl->tpl_vars['songItem']->_loop = true;
 <div class="audio_item">
 <h2><?php echo $_smarty_tpl->tpl_vars['songItem']->value['name'];?>
 </h2><br>
+<p>
+  <?php echo $_smarty_tpl->tpl_vars['songItem']->value['info'];?>
+
+</p>
 <audio controls>
   <source src="audio/<?php echo $_smarty_tpl->tpl_vars['songItem']->value['link'];?>
 " type="audio/<?php echo $_smarty_tpl->tpl_vars['songItem']->value['type'];?>

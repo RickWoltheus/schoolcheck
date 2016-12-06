@@ -4,7 +4,7 @@
 //For security reasons, this file should be placed in webroot
 
 // Define project status
-define('PROJECT_STATUS','development');//options are local_development, development and production
+define('PROJECT_STATUS','local_development');//options are local_development, development and production
 
 // Language settings (Dutch)
 setlocale(LC_ALL, 'nl_NL');

@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2016-10-27 19:55:08
+<?php /* Smarty version Smarty-3.1.18, created on 2016-12-02 12:15:41
          compiled from "views\rss_page.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:134375800807df35126-51001853%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '3bc63017feaf7198d96bbb4a90915aa3104f47c4' => 
     array (
       0 => 'views\\rss_page.tpl',
-      1 => 1477590868,
+      1 => 1480677025,
       2 => 'file',
     ),
   ),

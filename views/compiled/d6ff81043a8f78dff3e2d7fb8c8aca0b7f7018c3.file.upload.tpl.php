@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2016-11-01 13:43:18
+<?php /* Smarty version Smarty-3.1.18, created on 2016-12-02 13:46:42
          compiled from "views\cms\upload.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:2064858170479a69983-54713818%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'd6ff81043a8f78dff3e2d7fb8c8aca0b7f7018c3' => 
     array (
       0 => 'views\\cms\\upload.tpl',
-      1 => 1478004193,
+      1 => 1480677035,
       2 => 'file',
     ),
   ),
@@ -22,9 +22,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <?php if ($_valid && !is_callable('content_58170479aaac90_59669445')) {function content_58170479aaac90_59669445($_smarty_tpl) {?><form class="cms_form" action="" method="post"  enctype="multipart/form-data" >
  <h2>upload settings</h2>
  <select name="upload_option" id="upload_option" onchange="change_form()">
-   <option value="newsarticle">Select</option>
+   <option value="select">Select</option>
    <option value="newsarticle">newsarticle</option>
    <option value="scheme">scheme</option>
+   <!-- <option value="about">about</option> -->
 </select><br>
 <script type="text/javascript">
   function change_form(){
@@ -37,7 +38,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     if (str == "scheme"){
       $("#inputfields").load("views/cms/scheme.tpl");
     };
-    
+    // if (str == "about"){
+    //   $("#inputfields").load("views/cms/about.tpl");
+    // };
   };
 </script>
 

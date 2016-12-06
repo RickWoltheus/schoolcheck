@@ -17,9 +17,7 @@ switch($cms_page){
   break;
   
   case 'edit':
-      
-      $templateParser->display('views/cms/edit.tpl');
-      include('includes/cms/delete.php');
+  
   break;
   
   case 'Rssfeed':

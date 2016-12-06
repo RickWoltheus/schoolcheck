@@ -22,9 +22,9 @@ while($row = mysqli_fetch_array($result_Settings, MYSQLI_ASSOC)) {
 
 }
 //slideshow settings
-$slideshow_text1 = "test1";
-$slideshow_text2 = "test2";
-$slideshow_text3 = "test3";
+$slideshow_text1 = "AM";
+$slideshow_text2 = "Arctic Monkeys";
+$slideshow_text3 = "R U Mine";
 
 $slideshow_img1 = "images/arctic1.png";
 $slideshow_img2 ="images/arctic2.png";
@@ -37,4 +37,4 @@ $scheme_name4 = "country";
 $scheme_name5 = "rating";
 $scheme_name6 = "image";
 
-$number_of_items_PP = 3;
+

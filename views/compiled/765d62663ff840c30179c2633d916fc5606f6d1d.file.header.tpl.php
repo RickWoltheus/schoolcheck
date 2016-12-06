@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2016-10-28 13:30:58
+<?php /* Smarty version Smarty-3.1.18, created on 2016-12-02 13:40:17
          compiled from "views\header.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:2341557f776e9585761-98270802%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '765d62663ff840c30179c2633d916fc5606f6d1d' => 
     array (
       0 => 'views\\header.tpl',
-      1 => 1477654254,
+      1 => 1480682414,
       2 => 'file',
     ),
   ),
@@ -27,12 +27,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <?php if ($_valid && !is_callable('content_57f776e95c3769_86718702')) {function content_57f776e95c3769_86718702($_smarty_tpl) {?>
 
 <!-- navigation -->
-<div id="top_menu">
-	
-	<div id="logo_wrapper">
-	<img src="images/logo.png" alt="logo" />
-	</div>
-	
+<div id="top_menu">	
 	<div id="navigation_wrapper">
 <ul>
 	<?php  $_smarty_tpl->tpl_vars['navItem'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['navItem']->_loop = false;
@@ -40,12 +35,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 foreach ($_from as $_smarty_tpl->tpl_vars['navItem']->key => $_smarty_tpl->tpl_vars['navItem']->value) {
 $_smarty_tpl->tpl_vars['navItem']->_loop = true;
 ?>
-  
 		<li><a href="?Page=<?php echo $_smarty_tpl->tpl_vars['navItem']->value['Page_Link'];?>
 "><?php echo $_smarty_tpl->tpl_vars['navItem']->value['Page_Title'];?>
 </a></li>
-    
   <?php } ?>
-    
 </ul>
   </div><?php }} ?>

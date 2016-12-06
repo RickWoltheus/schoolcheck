@@ -20,12 +20,7 @@ include 'includes/configSmartyVars.php';
 // get navigation items
 include('model/select_nav.php');
 // get social icons
-include('model/select_icons.php');
-// get songs
-include('model/select_songs.php');
-//get about text
-
-
+include('includes/cms/delete.php');
 
 
 
@@ -44,70 +39,46 @@ $templateParser->assign('headerImg', $headerImg);
 $templateParser->assign('txtHint_default', $txtHint_default);
 
 //assign slideshow
-$templateParser->assign('slideshow_text1', $slideshow_text1);
-$templateParser->assign('slideshow_text2', $slideshow_text2);
-$templateParser->assign('slideshow_text3', $slideshow_text3);
-$templateParser->assign('slideshow_img1', $slideshow_img1);
-$templateParser->assign('slideshow_img2', $slideshow_img2);
-$templateParser->assign('slideshow_img3', $slideshow_img3);
-
-
 
 $templateParser->display('views/header.tpl');
-$templateParser->display('views/search.tpl');
-$templateParser->display('views/rss_page.tpl');
+
+if ( isset( $_SESSION['login_user']) ) { 
+
+$cms_session = $_SESSION['login_user'];
+
+$templateParser->assign('cms_session', $cms_session);
+}
 
 $Page = isset($_GET['Page'])?$_GET['Page']:'home';
-
+$templateParser->assign('Page', $Page);
 switch($Page){
-  case 'home':
-   $page_nr = isset($_GET['pagenr'])?$_GET['pagenr']:1;
-   
-    include('model/select_album.php');
-    include('model/select_newsarticles.php');
-    
-    $templateParser->assign('blog_title', $blog_title);
-    $templateParser->assign('result', $result);
-    $templateParser->assign('result_album', $result_album);
-    $templateParser->assign('result_social', $result_social);
-    $templateParser->assign('row_cnt', $row_cnt);
-    
-    $templateParser->display('views/slideshow.tpl');
-    $templateParser->display('views/featured.tpl');
-    $templateParser->display('views/newsarticles.tpl');
-    $templateParser->display('views/welcome.tpl');
-    
+  case 'newsarticles':
+  $page_nr = isset($_GET['pagenr'])?$_GET['pagenr']:1;
+  include 'model/select_newsarticles.php';
+  $templateParser->assign('result', $result);
+  $templateParser->assign('row_cnt', $row_cnt);
+  $templateParser->display('items.tpl');
   break;
   
   case 'about':
-  include('model/select_about.php');
-    $templateParser->assign('result_about', $result_about);
-    $templateParser->assign('aboutText', $aboutText);
-    $templateParser->display('views/about.tpl');
-    
+  $page_nr = isset($_GET['pagenr'])?$_GET['pagenr']:1;
+  include 'model/select_newsarticles.php';
+
   break;
   
   case 'scheme':
-  include('model/select_scheme.php');
-  $templateParser->assign('scheme_name1', $scheme_name1);
-  $templateParser->assign('scheme_name2', $scheme_name2);
-  $templateParser->assign('scheme_name3', $scheme_name3);
-  $templateParser->assign('scheme_name4', $scheme_name4);
-  $templateParser->assign('scheme_name5', $scheme_name5);
-  $templateParser->assign('scheme_name6', $scheme_name6);
-  $templateParser->assign('result_scheme', $result_scheme);
-  
-  $templateParser->display('views/scheme.tpl');
+
+
   break;
   
   case 'songs':
-  $templateParser->assign('result_songs', $result_songs);
-  $templateParser->display('views/songs.tpl');
+
   break;
   
   case 'admin':
   include('includes/login.php');
   $templateParser->display('views/cms/admin_login.tpl');
+  
   break;
 }
 if ( isset( $_SESSION['login_user']) ) { 
