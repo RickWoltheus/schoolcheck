@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2016-12-06 11:04:41
+<?php /* Smarty version Smarty-3.1.18, created on 2016-12-07 13:55:46
          compiled from "views\cms\upload.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:2064858170479a69983-54713818%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'd6ff81043a8f78dff3e2d7fb8c8aca0b7f7018c3' => 
     array (
       0 => 'views\\cms\\upload.tpl',
-      1 => 1481017959,
+      1 => 1481111036,
       2 => 'file',
     ),
   ),
@@ -19,12 +19,14 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'unifunc' => 'content_58170479aaac90_59669445',
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58170479aaac90_59669445')) {function content_58170479aaac90_59669445($_smarty_tpl) {?><form class="cms_form" action="" method="post"  enctype="multipart/form-data" >
+<?php if ($_valid && !is_callable('content_58170479aaac90_59669445')) {function content_58170479aaac90_59669445($_smarty_tpl) {?>
+<form class="cms_form" action="" method="post"  enctype="multipart/form-data" >
+  <button id="formchange" type="button" name="button" onclick="hide()" >Hide</button>
  <h2>upload settings</h2>
  <select name="upload_option" id="upload_option" onchange="change_form()">
    <option value="select">Select</option>
    <option value="newsarticle">newsarticle</option>
-   <option value="scheme">scheme</option>
+
    <!-- <option value="about">about</option> -->
 </select><br>
 <script type="text/javascript">
@@ -32,7 +34,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     var selected = document.getElementById("upload_option")
     var str = selected.options[selected.selectedIndex].value;
   
-    if (str == "newsarticle"){
+    if (str == "scholen"){
       $("#inputfields").load("views/cms/newsarticles.tpl");
     };
     if (str == "scheme"){
@@ -49,4 +51,5 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 </div>
 </form>
 </div>
+
 <?php }} ?>

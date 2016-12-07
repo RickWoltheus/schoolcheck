@@ -9,7 +9,8 @@
       
         <script type="text/javascript" src="includes/AJAX_getItems.js"></script>
         <script type="text/javascript" src="includes/AJAX_rss.js"></script>
-        <script type="text/javascript" src="includes/slideshow.js"></script>
+        <script type="text/javascript" src="includes/cms/javascript/show_hide.js"></script>
+
         
         <link rel="stylesheet" href="css/master.css">
     </head>

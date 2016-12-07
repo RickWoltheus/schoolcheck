@@ -1,9 +1,11 @@
-<form class="cms_form" action="" method="post"  enctype="multipart/form-data" >
+
+
+  
  <h2>upload settings</h2>
  <select name="upload_option" id="upload_option" onchange="change_form()">
    <option value="select">Select</option>
    <option value="newsarticle">newsarticle</option>
-   <option value="scheme">scheme</option>
+
    <!-- <option value="about">about</option> -->
 </select><br>
 <script type="text/javascript">
@@ -11,7 +13,7 @@
     var selected = document.getElementById("upload_option")
     var str = selected.options[selected.selectedIndex].value;
   
-    if (str == "newsarticle"){
+    if (str == "scholen"){
       $("#inputfields").load("views/cms/newsarticles.tpl");
     };
     if (str == "scheme"){
@@ -28,3 +30,4 @@
 </div>
 </form>
 </div>
+
