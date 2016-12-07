@@ -15,9 +15,13 @@ switch($cms_page){
   case 'add':
       $templateParser->display('views/cms/upload.tpl');
   break;
-  
+
   case 'edit':
+  $id = $_GET['id'];
+  include 'model/select_item.php';
+  $templateParser->assign('result_select_items', $result_select_items);
   
+  $templateParser->display('views/cms/edit.tpl');
   break;
   
   case 'Rssfeed':

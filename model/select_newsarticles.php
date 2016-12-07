@@ -2,7 +2,7 @@
 $start_items= (($page_nr-1)*ITEMS_PP);
 $sql ="SELECT * FROM ".$Page." LIMIT " . $start_items . ", " . ITEMS_PP ;
 
-$sql_count ="SELECT * FROM newsarticles";
+$sql_count ="SELECT * FROM $Page";
 $result_count = $mysqli->query($sql_count);
 $row_cnt = $result_count->num_rows/ITEMS_PP;
 

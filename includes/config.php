@@ -21,6 +21,5 @@ define('DB_PASSWORD','');
   define('DB_USERNAME','root');
   define('DB_PASSWORD','');
 }
-$number_of_items_PP = 2;
-define('ITEMS_PP', $number_of_items_PP);
+
 ?>

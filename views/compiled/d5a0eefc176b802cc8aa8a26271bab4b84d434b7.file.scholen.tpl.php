@@ -1,22 +1,22 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2016-12-06 10:58:05
-         compiled from "views\items.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:227758452a682351c5-16245457%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /* Smarty version Smarty-3.1.18, created on 2016-12-07 10:00:32
+         compiled from "views\scholen.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:260245846c0df79de77-67101556%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    'df14b632df792f767c2a065bfd4641cf0016b145' => 
+    'd5a0eefc176b802cc8aa8a26271bab4b84d434b7' => 
     array (
-      0 => 'views\\items.tpl',
-      1 => 1481017960,
+      0 => 'views\\scholen.tpl',
+      1 => 1481101230,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '227758452a682351c5-16245457',
+  'nocache_hash' => '260245846c0df79de77-67101556',
   'function' => 
   array (
   ),
   'version' => 'Smarty-3.1.18',
-  'unifunc' => 'content_58452a68345604_17908263',
+  'unifunc' => 'content_5846c0e00086d4_24286902',
   'variables' => 
   array (
     'result' => 0,
@@ -28,32 +28,32 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58452a68345604_17908263')) {function content_58452a68345604_17908263($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_date_format')) include 'C:\\wamp64\\www\\school\\schoolcheck\\libs\\plugins\\modifier.date_format.php';
-?>
+<?php if ($_valid && !is_callable('content_5846c0e00086d4_24286902')) {function content_5846c0e00086d4_24286902($_smarty_tpl) {?>
 	<div id="newsarticles">
 	<?php  $_smarty_tpl->tpl_vars['oneItem'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['oneItem']->_loop = false;
  $_from = $_smarty_tpl->tpl_vars['result']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
 foreach ($_from as $_smarty_tpl->tpl_vars['oneItem']->key => $_smarty_tpl->tpl_vars['oneItem']->value) {
 $_smarty_tpl->tpl_vars['oneItem']->_loop = true;
 ?>
+
 	<article>
-		<h3><?php echo $_smarty_tpl->tpl_vars['oneItem']->value['title'];?>
+		<h3><?php echo $_smarty_tpl->tpl_vars['oneItem']->value['schoolName'];?>
 </h3>
-		<p><?php echo $_smarty_tpl->tpl_vars['oneItem']->value['content'];?>
+		<p><?php echo $_smarty_tpl->tpl_vars['oneItem']->value['adress'];?>
 </p>
-		<br><img src='images/upload/<?php echo $_smarty_tpl->tpl_vars['oneItem']->value['image'];?>
-' alt="<?php echo $_smarty_tpl->tpl_vars['oneItem']->value['title'];?>
-">
-	<small><?php echo smarty_modifier_date_format($_smarty_tpl->tpl_vars['oneItem']->value['date_created'],"%A, %B %e, %Y");?>
-</small>
 	</article>
+  
+  
 	<?php if (isset($_smarty_tpl->tpl_vars['cms_session']->value)) {?>
+  <a href="?Page=admin&cms_menu=edit&id=<?php echo $_smarty_tpl->tpl_vars['oneItem']->value['id'];?>
+">edit</a>
 	<form action='' method="post">
 	    <input type="hidden" name="id_delete" value="<?php echo $_smarty_tpl->tpl_vars['oneItem']->value['id'];?>
-">
+" onclick=changeHtml(this) />
 	    <input type="submit" name="submit_delete" value="Delete">
 	</form>
 	<?php }?>
+  
 	<?php } ?>
 
 </div>
