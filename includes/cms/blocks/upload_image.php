@@ -1,7 +1,7 @@
 <?php
 if (move_uploaded_file($_FILES["file_upload"]["tmp_name"], $target_file)) {
     echo "The file ". basename( $_FILES["file_upload"]["name"]). " has been uploaded.";
-    if ($upload_option == "newsarticle"){
+  if ($upload_option == "newsarticle"){
     $sql_upload = "INSERT INTO newsarticles (title, content, image)VALUES ('$upload_title', '$upload_content', '$file_name')";
   }
   if ($upload_option == "scheme"){

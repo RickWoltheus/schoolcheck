@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2016-12-07 18:27:00
+<?php /* Smarty version Smarty-3.1.18, created on 2016-12-09 20:45:46
          compiled from "views\cms\edit.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:623658186de92bf4b7-73421016%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '76dbe19605b1b2c08a188ab190669b50f4fd452d' => 
     array (
       0 => 'views\\cms\\edit.tpl',
-      1 => 1481131618,
+      1 => 1481312745,
       2 => 'file',
     ),
   ),
@@ -27,8 +27,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_58186de972fbc7_87181093')) {function content_58186de972fbc7_87181093($_smarty_tpl) {?>
-  <h2><?php echo $_smarty_tpl->tpl_vars['result_select_items']->value['schoolName'];?>
-</h2>
+  <h2></h2>
 <form action="" method="post">
   
   <?php  $_smarty_tpl->tpl_vars['oneItem'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['oneItem']->_loop = false;
@@ -51,6 +50,7 @@ $_smarty_tpl->tpl_vars['value']->_loop = true;
 ">
   <?php } ?>
   <?php } ?>
+  <br>
   
 <input type="submit" name="edit_message" value="submit">
 </form>

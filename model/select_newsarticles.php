@@ -1,6 +1,6 @@
 <?php
 $start_items= (($page_nr-1)*ITEMS_PP);
-$sql ="SELECT * FROM ".$Page." LIMIT " . $start_items . ", " . ITEMS_PP ;
+$sql ="SELECT * FROM ".$Page." ORDER BY id DESC LIMIT " . $start_items . ", " . ITEMS_PP ;
 
 $sql_count ="SELECT * FROM $Page";
 $result_count = $mysqli->query($sql_count);

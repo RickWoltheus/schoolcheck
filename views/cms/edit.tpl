@@ -1,5 +1,5 @@
 
-  <h2>{$result_select_items.schoolName}</h2>
+  <h2></h2>
 <form action="" method="post">
   
   {foreach from=$result_select_items item=oneItem}
@@ -9,6 +9,7 @@
   <input type="text" name="{$itemKey}" value="{$value}">
   {/foreach}
   {/foreach}
+  <br>
   
 <input type="submit" name="edit_message" value="submit">
 </form>

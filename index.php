@@ -73,8 +73,14 @@ switch($Page){
   $templateParser->display('scholen.tpl');
   break;
   
-  case 'songs':
+  case 'read_more':
 
+$Page_was = $_GET['Page_was'];
+$id = $_GET['id'];
+include 'model/select_item.php';
+$templateParser->assign('result_select_items', $result_select_items);
+$templateParser->assign('Page_was', $Page_was);
+$templateParser->display('content/content_page_template.tpl');
   break;
   
   case 'admin':

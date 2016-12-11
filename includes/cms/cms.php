@@ -1,5 +1,5 @@
 <?php
-echo "<div id='cms_menu'>";
+
 
 // check if submit is clicked
 if ( isset( $_POST['submit_standard'] ) ) { 
@@ -26,23 +26,5 @@ $result_homepage = mysqli_query($mysqli,$sql_homepage );
 }}
 
 
-// Check if image file is a actual image or fake image not working anymore
-if(isset($_POST["submit_upload"])) {
-  $upload_option =  $_POST["upload_option"];
-  // newsarticles post
-  if ($upload_option == "newsarticle") {
-  $upload_title =  $_POST["newsarticle_title"];
-  $upload_content =  $_POST["newsarticle_content"];
-  } 
-  // upload vars
-  require 'includes/cms/check_if_image.php';
-  // Check if $uploadOk is set to 0 by an error
-  if ($uploadOk == 0) {
-      echo "Sorry, your file was not uploaded.";
-  // if everything is ok, try to upload file
-} else {
-  require('upload_image.php');
 
-}
-   }
 

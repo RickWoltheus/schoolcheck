@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2016-12-07 14:49:36
+<?php /* Smarty version Smarty-3.1.18, created on 2016-12-09 20:45:06
          compiled from "views\scholen.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:260245846c0df79de77-67101556%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'd5a0eefc176b802cc8aa8a26271bab4b84d434b7' => 
     array (
       0 => 'views\\scholen.tpl',
-      1 => 1481118572,
+      1 => 1481312704,
       2 => 'file',
     ),
   ),
@@ -21,29 +21,32 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   array (
     'result' => 0,
     'oneItem' => 0,
-    'cms_session' => 0,
     'Page' => 0,
+    'cms_session' => 0,
     'row_cnt' => 0,
     'foo' => 0,
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_5846c0e00086d4_24286902')) {function content_5846c0e00086d4_24286902($_smarty_tpl) {?>
-	<div id="newsarticles">
+	<div class="items">
 	<?php  $_smarty_tpl->tpl_vars['oneItem'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['oneItem']->_loop = false;
  $_from = $_smarty_tpl->tpl_vars['result']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
 foreach ($_from as $_smarty_tpl->tpl_vars['oneItem']->key => $_smarty_tpl->tpl_vars['oneItem']->value) {
 $_smarty_tpl->tpl_vars['oneItem']->_loop = true;
 ?>
-<!-- what needs to be displayed -->
+  <!-- what needs to be displayed -->
 	<article>
 		<h3><?php echo $_smarty_tpl->tpl_vars['oneItem']->value['schoolName'];?>
 </h3>
 		<p><?php echo $_smarty_tpl->tpl_vars['oneItem']->value['adress'];?>
 </p>
 	</article>
-  
-  <!-- add to favorites -->
+  <a href="?Page=read_more&id=<?php echo $_smarty_tpl->tpl_vars['oneItem']->value['id'];?>
+&Page_was=<?php echo $_smarty_tpl->tpl_vars['Page']->value;?>
+">read more..</a>
+	
+	<!-- add to favorites -->
   <form action='' method="post">
       <input type="hidden" name="id_favorite" value="<?php echo $_smarty_tpl->tpl_vars['oneItem']->value['id'];?>
 "/>

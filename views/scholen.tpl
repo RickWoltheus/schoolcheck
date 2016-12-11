@@ -1,13 +1,14 @@
 
-	<div id="newsarticles">
+	<div class="items">
 	{foreach from=$result item=oneItem}
-<!-- what needs to be displayed -->
+  <!-- what needs to be displayed -->
 	<article>
 		<h3>{$oneItem.schoolName}</h3>
 		<p>{$oneItem.adress}</p>
 	</article>
-  
-  <!-- add to favorites -->
+  <a href="?Page=read_more&id={$oneItem.id}&Page_was={$Page}">read more..</a>
+	
+	<!-- add to favorites -->
   <form action='' method="post">
       <input type="hidden" name="id_favorite" value="{$oneItem.id}"/>
       <input type="submit" name="submit_favorite" value="favorite">
